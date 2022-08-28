@@ -98,7 +98,7 @@ li {
   background: rgb(255, 242, 0);
   position: absolute;
   left: 0;
-  bottom: -3px;
+  bottom: 4px;
   transition: 0.5s;
 }
 
@@ -108,6 +108,10 @@ li {
 
 .tab_links.active_link::after {
   width: 50%;
+}
+
+.nav-links li a:hover {
+  color:rgb(255, 242, 0);
 }
 
 
