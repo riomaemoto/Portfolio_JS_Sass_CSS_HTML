@@ -1,0 +1,35 @@
+@import "./_profile_header";
+@import "./_profile_main";
+@import "./_profile_footer";
+@import "./_hamburger";
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  body {
+    background-color: rgb(0, 0, 0);
+    font-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50% 0rem;
+    overflow-x: hidden;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+}
