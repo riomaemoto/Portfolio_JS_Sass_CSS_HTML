@@ -1,0 +1,95 @@
+@import "./_hamburger";
+@import "./_contact_header";
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  body {
+    background-color: rgb(0, 0, 0);
+    font-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50% 0rem;
+    overflow-x: hidden;
+    color: white;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+@mixin borderColor() {
+  border: 4px solid rgb(255, 115, 0);
+}
+
+.container {
+  padding: 2% 3%;
+
+  .form {
+    text-align: center;
+    margin: 10% auto 10px;
+
+    @media (max-width: 768px) {
+      margin: 20% auto 10px;
+    }
+
+    .contact {
+      margin-bottom: 100px;
+      font-size: 50px;
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
+    }
+
+    .box {
+      margin: 0% auto 10px;
+      align-items: center;
+      width: 400px;
+      @include borderColor();
+      @media (max-width: 768px) {
+        margin: 0% auto 10px;
+        align-items: center;
+        width: 330px;
+      }
+    }
+
+    input {
+      padding: 15px;
+      width: 235px;
+      @media (max-width: 768px) {
+        padding: 10px;
+      }
+    }
+
+    .form_subtitle {
+      margin: 34px;
+    }
+
+    .send {
+      margin: 34px;
+
+      .button {
+        background-color: rgb(255, 115, 0);
+        font-size: 20px;
+        padding: 4px;
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}

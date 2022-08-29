@@ -40,18 +40,17 @@
 }
 
 .top {
-  height: 65vh;
+  // height: 65vh;
   width: 100%;
   background-color: black;
 
   @media (max-width: 780px) {
-    background-image: url(/img/LEO_0011.jpg);
-    background-size: cover;
+    // background-image: url(/img/LEO_0057.JPG);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: right;
   }
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
 
   .container {
     padding: 2% 3%;
