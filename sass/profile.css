@@ -36,6 +36,7 @@
   margin-right: 50px;
   cursor: pointer;
   position: relative;
+  font-weight: 600;
 }
 .top .tab_links::after {
   content: "";
