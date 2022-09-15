@@ -33,9 +33,10 @@
 
   <main id="about">
     <div class="container">
-      <form class="form" netlify name="contact" method="post" data-netlify="true" onsubmit="submit"
+      <form class="form" name="contact" method="post" data-netlify="true" onsubmit="submit"
         data-netlify-honeypot="bot-field" action="/success/">
         <h1 class="contact">Contact</h1>
+        <input type="hidden" name="form-name" value="contact">
         <div class="box">
           <div class="name form_subtitle">Name</div>
           <input type="text form_subtitle" placeholder="Name" name="name" id="name">
