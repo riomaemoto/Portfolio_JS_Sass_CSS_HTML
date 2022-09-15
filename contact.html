@@ -34,9 +34,9 @@
   <main id="about">
     <div class="container">
       <form class="form" name="contact" action="POST" data-netlify="true" onsubmit="submit" netlify-honeypot="bot-field"
-        action="/success/">
+        action="/success.html">
         <h1 class="contact">Contact</h1>
-        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="bot-field" value="contact">
         <div class="box">
           <div class="name form_subtitle">Name</div>
           <input type="text" class="form_subtitle" placeholder="Name" id="name" name="name">
@@ -44,7 +44,7 @@
           <input type="email" class="form_subtitle" placeholder="Email" id="email" name="email">
           <div class="text form_subtitle">Text</div>
           <textarea cols="30" rows="10" name="message" id="message"></textarea>
-          <div data-netlify-recaptcha="true" class="form_subtitle"></div>
+          <div data-netlify-recaptcha="true"></div>
           <div class="send">
             <button class="button">Send</button>
           </div>
