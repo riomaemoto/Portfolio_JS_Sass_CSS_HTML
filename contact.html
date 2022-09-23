@@ -1,59 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Leo</title>
+    <meta
+      name="description"
+      content="This is my personal blog feel free to check it out"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="sass/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Leo</title>
-  <meta name="description" content="This is my personal blog feel free to check it out">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="sass/contact.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <body>
+    <header class="top">
+      <div class="container">
+        <nav>
+          <div></div>
+          <ul class="navlinks">
+            <li>
+              <a class="tab_links active_link" href="/index.html">Home</a>
+            </li>
+            <li><a class="tab_links" href="bbb">Sample1</a></li>
+            <li>
+              <a class="tab_links" href="https://my-app-8a156.web.app/"
+                >Sample2</a
+              >
+            </li>
+          </ul>
+          <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-</head>
-
-<body>
-  <header class="top">
-    <div class="container">
-      <nav>
-        <div></div>
-        <ul class="navlinks">
-          <li><a class="tab_links active_link" href="/index.html">Home</a></li>
-          <li><a class="tab_links" href="bbb">Sample1</a></li>
-          <li><a class="tab_links" href="https://my-app-8a156.web.app/">Sample2</a></li>
-        </ul>
-        <div class="hamburger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main id="about">
-    <div class="container">
-      <form class="form" name="contact" action="POST" data-netlify="true" onsubmit="submit" netlify-honeypot="bot-field"
-        action="/sent/">
+    <main id="about">
+      <div class="container">
+        <!-- <form
+          class="form"
+          name="contact"
+          action="POST"
+          data-netlify="true"
+          onsubmit="submit"
+          netlify-honeypot="bot-field"
+          action="/sent/"
+        > -->
         <h1 class="contact">Contact</h1>
-        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="form-name" value="contact" />
         <div class="box">
           <div class="name form_subtitle">Name</div>
-          <input type="text" class="form_subtitle" placeholder="Name" id="name" name="name">
+          <input
+            type="text"
+            class="form_subtitle"
+            placeholder="Name"
+            id="name"
+            name="name"
+          />
           <div class="email form_subtitle">Email</div>
-          <input type="email" class="form_subtitle" placeholder="Email" id="email" name="email">
+          <input
+            type="email"
+            class="form_subtitle"
+            placeholder="Email"
+            id="email"
+            name="email"
+          />
           <div class="text form_subtitle">Text</div>
           <textarea cols="30" rows="10" name="message" id="message"></textarea>
           <div data-netlify-recaptcha="true" class="form_subtitle"></div>
           <div class="send">
             <button class="button">Send</button>
           </div>
+          <br />
+          <br />
+          <br />
         </div>
-      </form>
-    </div>
-  </main>
-  <footer></footer>
-  <script src="js/sample1.js"></script>
-</body>
-
+        <br />
+        <!-- </form> -->
+        <div>
+          <button class="pushTheButton">Send</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/sample1.js"></script>
+  </body>
 </html>
