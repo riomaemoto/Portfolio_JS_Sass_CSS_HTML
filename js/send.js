@@ -1,17 +1,21 @@
-emailjs.init("0s_7wx4fW1c_HW6A7");
-
+emailjs.init("zP3x8COshJzG0eYv3");
 const onClick = () => {
   const element = document.querySelector(".pushTheButton");
-  const templateVariables = {
-    email: "tarou@example.com",
-    to_name: "ながとも",
-    from_name: "ながとも2",
-    content: "テストメッセージです",
-  };
+
   // send mail
   element.addEventListener("click", () => {
+    const inputName = document.querySelector("#inputName").value;
+    const inputEmail = document.querySelector("#inputEmail").value;
+    const inputContents = document.querySelector("#inputContents").value;
+
+    const templateVariables = {
+      email: inputEmail,
+      to_name: "leo",
+      from_name: inputName,
+      contents: inputContents,
+    };
     emailjs
-      .send("service_jc4webr", "template_rxt65at", templateVariables)
+      .send("service_ni3z47a", "template_qt15ukd", templateVariables)
       .then(() => console.log("success"));
   });
 };

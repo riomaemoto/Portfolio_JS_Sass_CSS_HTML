@@ -81,16 +81,15 @@ html {
       margin: 34px;
     }
 
-    .send {
+    .sendButton {
       margin: 34px;
-
-      .button {
-        background-color: rgb(255, 115, 0);
-        font-size: 20px;
-        padding: 4px;
+      background-color: rgb(255, 115, 0);
+      font-size: 20px;
+      padding: 4px;
+      .sendButton:hover {
         cursor: pointer;
-        color: white;
       }
+      color: white;
     }
   }
 }
