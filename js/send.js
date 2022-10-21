@@ -1,4 +1,4 @@
-emailjs.init("REACT_APP_USER_ID");
+emailjs.init("H-iXD6JCsR5Tqlncl");
 const onClick = () => {
   const element = document.querySelector(".pushTheButton");
 
@@ -15,7 +15,7 @@ const onClick = () => {
       contents: inputContents,
     };
     emailjs
-      .send("REACT_APP_SERVICE_ID", "REACT_APP_TEMPLATE_ID", templateVariables)
+      .send("service_ni3z47a", "template_qt15ukd", templateVariables)
       .then(() => console.log("success"));
   });
 };
